@@ -17,12 +17,96 @@ nav{opacity:0.7}
 strong{color:red}
 em{color:#06f}
 footer{
-	height:90px;
+	height:100px;
 	background-color:black;
 	opacity:0.7;
 	text-align:center;
 	color:white;
-	padding:20px;
+	padding:10px;
 	margin-top:40px
 }
 p{font-weight:bold}
+/*social media icon bars*/
+.fa {
+padding: 2px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+ border-radius:50%;
+ target="_blank"
+}
+
+.fa:hover {
+	background-color:white;
+    opacity: 1;
+	text-decoration: none;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-heart{
+	 background: red;
+  color: white;
+}
+.fa-union{
+	background: black;
+  color: yellow;
+}
+/*art/media websites*/
+.ref a:hover{background-color:grey;text-decoration: none;}
+.ref{background-color:black ; opacity:0.8 ; color:white ; margin-top:40px}
+/*flex-container*/
+.flex-container{
+	display:flex;
+	align-content: space-between;
+	justify-content:space-between;
+	margin-top:50px
+}
+.side{
+background-color:#0d0d0d;
+opacity:0.7;
+color:white;
+padding:8px;
+margin-right:10px;
+height:600px
+
+}
+   .aside a:hover{
+	   text-decoration: none;
+	   background-color:#cc33ff;
+	   color:white;
+	   padding:0px;
+   }   .aside a{color:white}
+       /* .aside a:visited{background-color:yellow}*/
+	   .ll{list-style:none}
+	   .ll li::before{content: "\25b6";
+                      color: #4d79ff;
+                      font-weight: bold;
+                      display: inline-block; 
+                      width: 1em;
+                      margin-left: -3em;}
+	   .ll a:hover{background-color:#4d79ff} 
+.main{
+	background-color:#000d33;
+opacity:0.8;
+color:white;
+padding:8px;
+width:90%;
+margin-left:10px;
+
+}  .main p{font-size:18px ;font-family:sans-serif}
