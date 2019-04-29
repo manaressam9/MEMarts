@@ -110,3 +110,28 @@ width:90%;
 margin-left:10px;
 
 }  .main p{font-size:18px ;font-family:sans-serif}
+form{
+	background-color:#00001a;
+	opacity:0.8;
+	border-radius:10px;
+	padding:12px;
+	width:70%;
+	margin:auto;
+}
+label{color:white; font-size:15px; font-family:Helvetica, Arial, sans-serif;}
+input[type=text]{border-radius:10%;border-color:#a300cc}input[type=number]{border-radius:10%;border-color:#a300cc}
+input[type=password]{border-radius:10%;border-color:#a300cc}input[type=email]{border-radius:10%;border-color:#a300cc}
+
+.h3a a:hover{background-color:#b3b3ff;opacity:0.7}.h3a{text-align:center;margin-top:12px;margin-bottom:0px}
+.click{
+	border-radius:30%;
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	padding:10px;
+	border-color:white;
+}
+button:hover {
+  background-color:#f5ccff;
+} 
+.alrt{border-radius:10%;border-color:#a300cc;margin-top:8px}
