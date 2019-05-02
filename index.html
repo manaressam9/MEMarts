@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="myWeb.css">
 	
 </head>
-  <body>
+  <body style="background-image:url('g6.jpg')">
   
   <nav class="navbar navbar-inverse navbar-fixed-top" >
   <div class="container-fluid">
@@ -20,8 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-       <a class="navbar-brand"  style="color:white ">MEM<sup><b style="color:#ff0000">a</b><b style="color:#ffff00">r</b>
-	   <b style="color:#66ff33">t</b> <b style="color:#0040ff">s</b></sup></a>
+       <a class="navbar-brand"  style="color:white;font-size:25px ">MEM<sup><b style="color:#ff0000">a</b><b style="color:#ffff00">r</b><b style="color:#66ff33">t</b><b style="color:#0040ff">s</b></sup></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -30,12 +29,15 @@
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">About us <span class="caret"></span></a>
           <ul class="dropdown-menu dropbx">
-            <li>mem-arts is a free art courses website published in 2019 by manar essam <strong>aims to</strong> give
-			 you an over view about most popular <em>fine arts</em> and the grand new art styles <strong>you are going to 
-			 enjoy learning on this website</strong> , you can share your own work after each tutorial so we can make sure you are
+               <div style="background-color:black;color:white">
+            <li>mem-arts is a free art courses website published in 2019 by manar essam <strong style="color:red">aims to</strong> give
+			 you an over view about most popular <em>fine arts</em> and the grand new art styles , you can share your own work after each tutorial so we can make sure you are
 			 keepin up with us</li><hr>
-            <li style="color:#3385ff">view the owner <b>ARTWORKS</b> on</li>
-			<div >
+			   </div>
+			  <div style="background-color:black;color:white">
+            <li style="color:#3385ff;text-transform:uppercase;letter-spacing:2px">view the owner <b>ARTWORKS</b> on</li>
+			  </div><hr>
+			<div>
             <a href="#" class="fa fa-facebook icon" title="facebook"></a>
 			<a href="https://www.instagram.com/mem_art9/" class="fa fa-instagram icon" title="instagram"></a>
 			<a href="https://www.pinterest.com/manareldredy/" class="fa fa-pinterest icon" title="pinterest"></a>
@@ -45,12 +47,29 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index3.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-        <li><a href="index4.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><button onclick="openForm()" class="open-button"><span class="glyphicon glyphicon-log-in"></span> Login</button></li>
       </ul>
     </div>
   </div>
 </nav>
+       <!-- pop out reg form -->
+      <div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1 style="color:white">Login</h1>
 
+    <label for="text"><b>User Name </b></label>
+    <input type="text" placeholder="user name" id="text" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required style="margin-bottom:5px">
+    <input type="checkbox" value="remember" name="rmb" checked style="margin-bottom:19px"> 
+	    <b style="color:white">remember me</b>
+    <button type="submit" class="btn" onclick="location.href='next3.html';">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+      </div>
+	  
+	   <!-- photo slider -->
 <div class="container" style="width:70% ; margin-top:80px ;background-color:black;opacity:0.9">
  <h3 style="text-align:center ; color:white ;opacity:0.9"><b>W</b>iden <b>Y</b>our <b>H</b>orizon</h3>
   <div id="myCarousel" class="carousel " >
@@ -115,6 +134,7 @@
     </a>
   </div>
 </div>
+    <!-- pre footer -->
  <div class="container-fluid ref" >
    <h1 style="text-align:center"><b> Art / Media Websites</b></h1>
     <nav style="text-align:center">
@@ -122,7 +142,7 @@
        <a href="https://www.instagram.com" class="fa fa-instagram icon" title="instagram"></a>
 	   <a href="https://www.pinterest.com" class="fa fa-pinterest icon" title="pinterest"></a>
 	</nav>
-  <div class="container ref" style="text-align:left;margin-top:8px">
+  
      <h3><a href="https://www.ugallery.com" target="_blank" style="color:white"><b style="color:yellow">U</b>GALLERY</a></h3>
 	   <p>- original artworks <b style="color:yellow">selling</b> website</p>
 	 <h3><a href="https://www.artquid.com" target="_blank" style="color:white"><b>A</b>rtQuid</a></h3>
@@ -135,16 +155,17 @@
 	 <h3><a href="https://www.indiewalls.com" target="_blank"><img src="https://dz1gpzuxdggb.cloudfront.net/img/indiewalls-logo-white.svg?tv=2019-02-17::01"
 	       width="100px" height="100px"></a></h3> 
        <p>- it let’s potential buyers submit projects with specific criteria and the artists create 
-	       proposals that fit to the clients need.The client then proceed to those his favorite and purchases it</p>		   
-  </div>
+	       proposals that fit to the clients need.The client then proceed to those his favorite and purchases it</p>   
+  
   </div>
   <footer>
   <h3>&copy; copyright 2019 MEM<sup><b style="color:#ff0000">a</b><b style="color:#ffff00">r</b>
 	   <b style="color:#66ff33">t</b> <b style="color:#0040ff">s</b></sup></h3>
  </footer>
- 
+    <script type="text/javascript" src="mem.js"></script>
      <script src="jquery.js"></script>
     <script src="bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
+
 </html>
