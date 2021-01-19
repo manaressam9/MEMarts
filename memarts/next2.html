@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>sign up at MEMarts</title>
+	<meta name="description" content="MEM-arts is a new absolutely free art courses website where you can
+	learn basics + advanced level of sketching and painting and have your own style">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="myWeb.css">
+	<style>.checkbx{color:white;letter-spacing:2px;text-transform:capitalize;padding-left:4px;padding-top:1px} </style>
+</head>
+  <body style="background-image:url('g7.jpg');height:800px;background-size:100% 100%">
+       <h3 class="h3a"><a href="index.html" style="text-decoration:none;color:white" title="home page">MEM<sup>
+	   <b style="color:#ff0000">a</b> <b style="color:#ffff00">r</b>
+	      <b style="color:#66ff33">t</b> <b style="color:#0040ff">s</b></sup></a>
+	   </h3>
+     <div class="container" style="padding:0px;">
+	   
+	    <form  action="/action_page.php" name="Form" onsubmit="return validateForm()">
+		  <div class="form-group">
+		    <label for="text">First Name <b style="color:red;font-size:20px">*</b>:</label>
+		    <input type="text" class="form-control" placeholder="first name" id="text" name="one">
+		  </div>
+		  <div class="form-group">
+		    <label for="text1">Last Name:</label>
+		    <input type="text" class="form-control" placeholder="last name" id="text1" >
+		  </div>
+		  <div class="form-group">
+		     <label for="email">Email <b style="color:red;font-size:20px">*</b>:</label>
+             <input type="email" class="form-control" id="email" placeholder="email" name="two">
+          </div>
+		  <div class="form-group">
+		    <label for="text2">User Name <b style="color:red;font-size:20px">*</b>:</label>
+		    <input type="text" class="form-control" placeholder="user name" id="text2" name="three">
+		  </div>
+          <div class="form-group">
+             <label for="pwd">Password <b style="color:red;font-size:20px">*</b>:</label>
+             <input type="password" class="form-control" id="pwd" placeholder="account password" name="four">
+			  <div class="alert alert-info alrt" >
+                <strong style="color:#0066cc">Info !</strong> your password should be at least 8 characters and contain
+				numbers,&,$
+              </div>
+          </div>
+		  <div class="form-group">
+             <label for="gender">Gender</label>
+             <select id="gender" class="form-control" style="border-radius:10%;border-color:#a300cc">
+	             <option value="female">Female</option>
+	             <option value="male">Male</option>
+                 <option value="others">others</option>
+	             
+	         </select>
+          </div>
+		  <div class="form-group">
+		     <label for="no">Age</label>
+			 <input type="number" min="8" max="80" id="no" class="form-control" style="width:100px">
+		  </div>
+          <input type="checkbox" class="btn click"  id="MyBtn" value="I accept terms"><b class="checkbx">I accept terms</b>
+		</form>
+	 </div>
+	   <div class="container" style="padding:0px;margin-top:0px">
+	    <fieldset>
+          
+		<button type="submit" class="btn click" onclick="location.href='next3.html';" style="margin:3px" >Sign Up</button>
+		</fieldset>
+	 </div>
+	 <script>
+ var a = document.forms["Form"]["one"].value;
+  var b = document.forms["Form"]["two"].value;
+   var c = document.forms["Form"]["three"].value;
+    var d = document.forms["Form"]["four"].value;
+function validateForm() {
+  if (a == "" || b == "" || c == "" || d == "") {
+    alert("fill empty fields");
+    return false;
+  }
+
+}
+document.getElementById("MyBtn").addEventListener("mouseover",validateForm);
+</script>
+	  <script type="text/javascript" src="mem.js"></script>
+      <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

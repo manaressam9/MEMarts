@@ -1,0 +1,315 @@
+body{
+	 background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+nav{opacity:0.9;background-color:black;color:white;
+     text-decoration:uppercase;letter-spacing:3px;font-size:20px;height:30px}
+em{color:blue}
+.h3a{text-align:center;margin-top:20px;color:white:}
+.h3a a{color:white}
+.h3a a:hover{text-decoration:underline;display:lead;font-size:30px}
+/*POP OUT REG FORM*/
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+ 
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  z-index: 9;
+  position:fixed;
+  right:3px;
+  top:20px;
+  width:300px
+}
+
+/* Add styles to the form container */
+.form-container {
+  padding: 5px;
+  background-color: black;
+  color:white;
+  margin-top:30px;
+  width:300px
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px ;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #002db3;
+  color: white;
+  padding: 10px 12px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  text-transform:capitalize;
+  letter-spacing:3px
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+/*ABOUT US DROPDOWN LIST*/
+.dropbx li{
+	background-color:black;
+	color:white;
+	padding:6px;
+	margin:8px
+}
+.dropbx{min-width:250px}
+.dropbx a{
+	text-decoration:none;
+	padding:3px 6px;
+	margin:0 7px;
+	font-size:30px
+}
+
+
+/*SOCIAL MEDIA ICONS*/
+.ref .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+	color:white;
+	text-decoration:none
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+   background: linear-gradient(to bottom, #33ccff 0%, #9900cc 100%);
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+.fa-heart {
+  background: #f40083;
+  color: white;
+}
+.ref{
+	height:800px;
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	padding-left:12px;
+	margin-bottom:50px;
+	margin-top:50px
+}
+.ref p{font-size:15px;
+text-decoration:capitalize;
+letter-spacing:2px;padding-left:12px}
+footer{
+	height:100px;
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	text-align:center;
+	padding:12px;
+}
+/*SECOND PAGE 'FLEX CONTAINER'*/
+.flex-container{
+	display:flex;
+	justify-content:space-between;
+	flex-wrap:nowrap;
+	margin:50px 0
+	
+}
+.side{
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	align-content: space-between;
+	height:600px
+}
+ .aside{padding:5px;margin-top:20px}
+ .aside a:hover{text-decoration:none;color:white;background-color:#d24dff}
+ .aside a{color:white}
+ .ll a:hover{background-color:#003d99}
+ .ll a{list-style:none}
+.main{
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	padding:5px;
+	width:80%
+}
+form{
+	background-color:#001133;
+	opacity:0.8;
+	width:70%;
+	margin:auto;
+	padding:8px;
+	border-radius:2px;
+}
+label{
+	color:white;
+	letter-spacing:3px;
+	text-decoration:uppercase
+}
+fieldset{
+	background-color:#001133;
+	opacity:0.8;
+	width:70%;
+	margin:auto;
+	border-radius:2px;
+	padding:3px
+}
+.click{
+	border-radius:10px;
+	background-color:black;
+	opacity:0.8;
+	color:white;
+	border-color:white
+}
+/*full screen vid 4th page*/
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  left:10%;
+  right:10%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 80%;
+  padding: 20px;
+  
+}
+.content th{
+	background-color:#e6f9ff;
+	color:black;
+	text-align:center;
+	text-transform:uppercase;
+	letter-spacing:3px;
+	opacity:0.7;
+	
+}
+.content td{text-transform:capitalize;}
+.content td:hover{background-color:black}
+.content a{color:white}
+.content a:hover{text-decoration:none;background-color:black;color:white}
+/*sidenav slider*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: white;
+  font-size:15px
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*video slideshow*/
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 560px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -30px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+.carosel{width:100%;margin:auto}
+/*PROFILE TEMPLATE*/
